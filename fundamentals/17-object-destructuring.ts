@@ -1,22 +1,23 @@
 
 
-interface Book {
+interface Course {
     title:string;
     subtitle:string;
-    lessonsCount: number;
+    lessonCount: number;
 }
 
-let book: Book = {
+let myCourse:Course = {
     title: "Typescript Bootcamp",
     subtitle: "Learn the language fundamentals, build practical projects",
-    lessonsCount: 45,
-}
+    lessonCount: 45
+};
 
 // destructuring
+printMyCourse(myCourse);
 
-function printCourse(book:Book) {
-    const {title, subtitle, lessonsCount} = book;
+function printMyCourse(course:Course) {
+    const {title, subtitle, lessonCount} = course;
 
-    console.log(`Title: ${title}, Subtitle: ${subtitle}, Lessons Count: ${lessonsCount}`);
+    console.log(`Title: ${title}, Subtitle: ${subtitle}, Lessons Count: ${lessonCount}`);
     
 }
