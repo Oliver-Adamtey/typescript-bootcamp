@@ -31,6 +31,8 @@ const newCourse1 = {
     stats: course.stats
 };
 
+//Object Spread of shallow copy
+
 const newCourse = {...course};
 
 console.log(newCourse);
