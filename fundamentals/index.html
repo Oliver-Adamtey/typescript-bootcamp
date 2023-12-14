@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            margin: 7px;
+        }
+        .password-container{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .password-toggle{
+            position: absolute;
+            right: 9px;
+            top: 6px;
+            cursor: pointer;
+        }
+
+        .bottom-link {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="header">TypeScript BoodCamp</h1>
+        <form id="signupForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="password-toggle" onclick="togglePassword('password')">👁️</span>
+            </div>
+            <div class="password-container">
+                <input type="password" id="Cpassword" name="password" placeholder="Confirm-Password" required>
+                <span class="password-toggle" onclick="togglePassword('Cpassword')">👁️</span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="bottom-link">Already have an account? <a href="#">Login</a></p>
+    </div>
+</body>
+<script src="01-why-typescript.js"></script>
+<script src="02-primitive-types.js"></script>
+<script src="03-null-undefined-chaining.js"></script>
+<script src="05-enums.js"></script>
+<script src="06-any-type.js"></script>
+</html>
