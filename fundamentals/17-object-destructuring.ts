@@ -15,7 +15,7 @@ let myCourse:Course = {
 // destructuring
 myStudy(myCourse);
 
-function myStudy(course:Course) {
+function myStudy(course:Course) {  
     const {title, subtitle, lessonCount} = course;
 
     console.log(`Title: ${title}, Subtitle: ${subtitle}, Lessons Count: ${lessonCount}`);
